@@ -1,0 +1,77 @@
+//
+//  SysPrefix.pch
+//  study
+//
+//  Created by mijibao on 16/1/15.
+//  Copyright © 2016年 mijibao. All rights reserved.
+//
+
+#ifndef SysPrefix_pch
+#define SysPrefix_pch
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifndef ACMACRO_H
+#define ACMACRO_H
+#import "ACMacro.h"
+#import "JZCommon.h"
+#import "OperatePlist.h"
+#import "UserInfoList.h"
+#import <AFNetworking.h>
+#import "NotificationNameDefine.h"
+#import "UIButton+ImageTitleStyle.h"
+#import "AppDelegate.h"
+#import "BaseViewController.h"
+#import "UIViewExt.h"
+#import "MBProgressHUD+Add.h"
+#import "SharedObject.h"
+#import "AccountManeger.h"
+
+#endif
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSLog(...)
+#define debugMethod()
+#endif
+
+#endif /* SysPrefix_pch */
+
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+/// 服务器地址+端口
+#define SERVER_ADDRESS @"202.85.218.51:8090"
+#define kXMPPHOST @"202.85.218.51"
+#define kXMPPJID                @"myXmppJid"
+#define KXMPPPORT              5222
+
+#define KIOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+// 新消息
+#define kNewMessageNotification @"newMessageNotification"
+#define kaddMessageNotification @"addMessageNotification"
+#define kResponderNotification @"teacherResponderNotification"
+//提示
+#define PromptMessage(message)\
+\
+MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];\
+hud.labelText = message;\
+hud.mode = MBProgressHUDModeText;\
+hud.labelColor = [UIColor whiteColor];\
+[hud hide:YES afterDelay:3];
+
+//弹出视图
+#define basicColor    RGBVCOLOR(0xdcdcdc)
+#define lightColor    RGBVCOLOR(0xff7949)
+#define fontColor     RGBVCOLOR(0x494949)
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>数学</key>
+	<string>shuxue</string>
+	<key>语文</key>
+	<string>yuwen</string>
+	<key>英语</key>
+	<string>yingyu</string>
+	<key>生物</key>
+	<string>shengwu</string>
+	<key>物理</key>
+	<string>wuli</string>
+	<key>化学</key>
+	<string>huaxue</string>
+</dict>
+</plist>
